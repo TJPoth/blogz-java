@@ -10,7 +10,7 @@ public class AuthenticationController {
 	
 	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String loginForm() {
-		return "base";
+		return "signup";
 	}
 
 }

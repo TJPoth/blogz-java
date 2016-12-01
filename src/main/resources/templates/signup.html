@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org/">
 
-{% block content %}
+<div th:replace = "base :: header"></div>
 
 <h1>Signup</h1>
 <form method="post">
@@ -9,35 +9,33 @@
         <tr>
             <td><label for="username">Username</label></td>
             <td>
-                <input name="username" type="text" value="{{ username }}">
+                <input name="username" type="text" value="{{ username }}"/>
                 <span class="error">{{ errors.username_error }}</span>
             </td>
         </tr>
         <tr>
             <td><label for="password">Password</label></td>
             <td>
-                <input name="password" type="password">
+                <input name="password" type="password"/>
                 <span class="error">{{ errors.password_error }}</span>
             </td>
         </tr>
         <tr>
             <td><label for="verify">Verify Password</label></td>
             <td>
-                <input name="verify" type="password">
+                <input name="verify" type="password"/>
                 <span class="error">{{ errors.verify_error }}</span>
             </td>
         </tr>
         <tr>
             <td><label for="email">Email (optional)</label></td>
             <td>
-                <input name="email" type="email" value="{{ email }}">
+                <input name="email" type="email" value="{{ email }}"/>
                 <span class="error">{{ errors.email_error }}</span>
             </td>
         </tr>
     </table>
-    <input type="submit">
+    <input type="submit"/>
 </form>
-
-{% endblock %}
 
 </html>
