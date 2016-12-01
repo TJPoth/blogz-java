@@ -8,10 +8,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 public class AuthenticationController {
 	
-	@RequestMapping(value="/login", method=RequestMethod.GET)
-	@ResponseBody
+	@RequestMapping(value="/", method=RequestMethod.GET)
 	public String loginForm() {
-		return "<h1>Login Form:</h1>";
+		return "base";
 	}
 
 }
