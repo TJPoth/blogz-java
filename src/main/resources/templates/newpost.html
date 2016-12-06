@@ -2,19 +2,19 @@
 <html xmlns:th="http://www.thymeleaf.org/">
 
 <div th:replace = "base :: header"></div>
-<h1>new post</h1>
+<h1>New Post</h1>
 
 <form method="post">
     <label>
         <div>title</div>
-        <input type="text" name="title" value="{{title}}"/>
+        <input type="text" name="title" value="title"/>
     </label>
     <label>
         <div>post</div>
         <textarea name="body">{{body}}</textarea>
     </label>
     <div class="error">Error</div>
-    <input type="submit">
+    <input type="submit"/>
 </form>
 
 </html>

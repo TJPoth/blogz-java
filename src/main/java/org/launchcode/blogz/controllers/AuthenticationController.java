@@ -29,8 +29,8 @@ public class AuthenticationController {
 	}
 	
 	@RequestMapping(value="post", method=RequestMethod.GET)
-	public String postForm() {
-		return "post";
+	public String blogForm() {
+		return "blog";
 	}
 
 }

@@ -3,8 +3,8 @@
 
 <div th:replace = "base :: header"></div>
 
-<h2 class="post-title">{{ post.title }}</h2>
-<p class="post-body">{{ post.body }}</p>
+<h2 class="post-title" th:text = "${post.title}">{{ post.title }}</h2>
+<p class="post-body" th:text = "${post.body}">{{ post.body }}</p>
 <!-- TODO add author w/ link to author's blog -->
 <p class="post-author">
     written on {{ post.created.strftime('%Y-%m-%d') }}
@@ -12,7 +12,5 @@
 <p class="post-author"><a href="/blog/{{post.author.username}}">
    More by: {{ post.author.username }}
 </a></p>
-
-{% endblock %}
 
 </html>
