@@ -2,28 +2,26 @@
 <html xmlns:th="http://www.thymeleaf.org/">
 
 <div th:replace = "base :: header"></div>
-
 <h1>Login</h1>
+
 <form method="post">
     <table>
         <tr>
             <td><label for="username">Username</label></td>
             <td>
-                <input name="username" type="text" value="{{ username }}">
+                <input name="username" type="text" th:value="${username}"/>
             </td>
         </tr>
         <tr>
             <td><label for="password">Password</label></td>
             <td>
-                <input name="password" type="password">
+                <input name="password" type="password"/>
             </td>
         </tr>
     </table>
-    <div style="color: red">{{ error }}</div>
-    <br>
-    <input type="submit">
+    <div style="color: red">Error</div>
+    <br></br>
+    <input type="submit"/>
 </form>
-
-{% endblock %}
 
 </html>

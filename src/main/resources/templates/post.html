@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org/">
 
-{% block content %}
+<div th:replace = "base :: header"></div>
 
 <h2 class="post-title">{{ post.title }}</h2>
 <p class="post-body">{{ post.body }}</p>

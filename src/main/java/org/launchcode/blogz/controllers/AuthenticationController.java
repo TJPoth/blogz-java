@@ -17,6 +17,20 @@ public class AuthenticationController {
 	public String signupForm() {
 		return "signup";
 	}
-
+	
+	@RequestMapping(value="/login", method=RequestMethod.GET)
+	public String loginForm() {
+		return "login";
+	}
+	
+	@RequestMapping(value="/newpost", method=RequestMethod.GET)
+	public String newpostForm() {
+		return "newpost";
+	}
+	
+	@RequestMapping(value="post", method=RequestMethod.GET)
+	public String postForm() {
+		return "post";
+	}
 
 }
