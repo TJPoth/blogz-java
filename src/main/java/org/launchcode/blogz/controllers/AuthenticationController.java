@@ -28,9 +28,10 @@ public class AuthenticationController {
 		return "newpost";
 	}
 	
-	@RequestMapping(value="post", method=RequestMethod.GET)
+	@RequestMapping(value="/blog", method=RequestMethod.GET)
 	public String blogForm() {
-		return "blog";
+		return "blog2";
 	}
+
 
 }
