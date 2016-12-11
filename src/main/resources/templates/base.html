@@ -2,7 +2,7 @@
 <html xmlns:th="http://www.thymeleaf.org/" th:fragment = "header">
     
     <head>
-        <title th:text="${pageTitle}">Blogz</title>
+        <title th:text="${pageTitle}"></title>
         <link rel="stylesheet" href="/css/styles.css"/>
     </head>
     <style>
@@ -11,7 +11,7 @@
 	}
 	</style>
     <body>
-    	<h1>Blogz!</h1>
+    	<h1 th:text="${pageTitle}"></h1>
             <ul id="menu">
                 <li><a href="/">home</a></li>
                 <li><a href="/blog">all posts</a></li>

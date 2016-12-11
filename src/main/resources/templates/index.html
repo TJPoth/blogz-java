@@ -4,7 +4,7 @@
 <div th:replace = "base :: header"></div>
 <h1>blog users!</h1>
 
-<ul>
+<ul th:each="user">
 {% for user in users %}
 <li><a href="/blog/{{ user.username }}">{{ user.username }}</a></li>
 {% endfor %}
