@@ -9,7 +9,7 @@
             <td><label for="username">Username</label></td>
             <td>
                 <input name="username" type="text" th:value="${username}"/>
-                <span style="color: red">errors.username_errors</span>
+                <span style="color: red" th:text="${errors.username_errors}">errors.username_errors</span>
             </td>
         </tr>
         <tr>
